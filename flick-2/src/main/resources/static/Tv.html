@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/MoviesDesign.css">
+    <title>Flick - Series</title>
+</head>
+<body>
+    
+    <header>
+       
+        <img class="Flick" src="Flick.png" height="5%" width="10%" alt="">
+        <button class="nav" onclick="document.location='Movies.html'">Movies</button>
+        <button class="nav" onclick="document.location='About.html'">About Us</button>
+        <button class="nav" id= "gmail" onclick="document.location='#'"></button>
+        <button class="nav" onclick="logout();">Log Out</button>
+        <form  id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+    
+    <script src="/script/tvjs.js"></script>
+</body>
+</html>
